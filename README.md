@@ -1,4 +1,4 @@
-#Balaio Podcast
+<h1>Balaio Podcast</h1>
 
 **Para clonar o projeto pela primeira vez, utilizar os seguintes comandos:**
 ```
