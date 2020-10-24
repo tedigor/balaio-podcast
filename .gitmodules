@@ -1,0 +1,6 @@
+[submodule "balaio-podcast-web"]
+	path = balaio-podcast-web
+	url = https://github.com/tedigor/balaio-podcast-web.git
+[submodule "balaio-podcast-api"]
+	path = balaio-podcast-api
+	url = https://github.com/tedigor/balaio-podcast-api.git

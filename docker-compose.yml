@@ -1,0 +1,36 @@
+version: "3" 
+services:
+    web:
+        build:
+            context: balaio-podcast-web
+            dockerfile: Dockerfile
+        ports:
+            - 2000:80
+        networks:
+            - balaio-network
+        depends_on:
+            - api
+            - mongodb
+
+    api:
+        build:
+            context: balaio-podcast-api
+            dockerfile: Dockerfile
+        ports:
+            - 3000:3000
+        networks:
+            - balaio-network
+        depends_on:
+            - mongodb
+
+    mongodb:
+        image: mongo
+        networks:
+            - balaio-network
+        ports:
+            - "27017-27019:27017-27019"
+
+
+networks:
+    balaio-network:
+        driver: bridge
