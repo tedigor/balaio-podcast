@@ -28,7 +28,7 @@ services:
         networks:
             - balaio-network
         ports:
-            - "27017-27019:27017-27019"
+            - "27022:27017"
 
 
 networks:
